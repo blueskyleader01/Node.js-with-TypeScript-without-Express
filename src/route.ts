@@ -28,7 +28,7 @@ export class Route {
                 this.service.getPosts(request, response);
                 break;
             default:
-                this.service.getResponse(response, 'Api not found!.');
+                this.service.getResponse(response, 'Api not found!');
         }
     }
 }
