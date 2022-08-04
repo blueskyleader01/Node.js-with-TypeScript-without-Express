@@ -66,6 +66,7 @@ export class Service extends Helper {
 
 
     /*
+    *
     * saving image in the images table base on the post id
     * @param file_name, post_id
     * Returns true or false and message
