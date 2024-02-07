@@ -17,12 +17,13 @@ export class Route {
         response.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type, x-access-token');
         response.setHeader('Access-Control-Allow-Credentials', true);
 
+        // *,,,*///
         switch (true) {
             case path == "/" && method == 'GET':
                 this.service.getResponse(response, 'Hello Api!');
                 break;
             case path == "/save-post" && method == 'POST':
-                this.service.savePost(request, response);
+                // this.service.savePost(request, response);
                 break;
             case path == "/get-posts" && method == 'POST':
                 this.service.getPosts(request, response);
